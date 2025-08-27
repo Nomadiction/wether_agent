@@ -2,7 +2,7 @@
 
 ### Установка
 ```bash
-git clone https://github.com/your-username/weather-agent.git
+git clone https://github.com/Nomadiction/wether_agent.git
 cd weather-agent
 pip install -r requirements.txt
 ```

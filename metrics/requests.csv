@@ -1,3 +1,5 @@
 timestamp,session_id,message,response,response_time_ms,city_extracted,weather_found
 2025-08-27T15:04:29.418852,user1,What is the weather in Berlin?,"Berlin, Germany: currently 26.9°C, wind 12.3 km/h, weather code 1.",1093.3520793914795,Berlin,True
 2025-08-27T15:08:04.865929,user1,What is the weather in Berlin?,"Berlin, Germany: currently 26.9°C, wind 12.3 km/h, weather code 1.",2066.234350204468,Berlin,True
+2025-08-27T19:12:04.549386,user1,What is the weather in Paris?,"Paris, France: currently 25.5°C, wind 8.8 km/h, weather code 3.",1604.9165725708008,Paris,True
+2025-08-27T19:16:22.906995,user1,What is the weather in Minsk?,"Minsk, Belarus: currently 15.7°C, wind 6.1 km/h, weather code 1.",1133.5270404815674,Minsk,True

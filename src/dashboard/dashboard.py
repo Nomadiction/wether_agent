@@ -101,10 +101,6 @@ class WeatherAgentDashboard:
         data = self.load_data()
         if "requests" in data:
             df = data["requests"]
-            # по дням
-            daily = df.groupby(df["timestamp"].dt.date).size()
-            self._save_line(daily.index, daily.values, self.output_dir / "daily_requests.png",
-                            "Daily Requests", "Date", "Requests")
             # топ городов
             if "city_extracted" in df and not df["city_extracted"].isna().all():
                 top = df["city_extracted"].value_counts().head(10)
@@ -164,7 +160,6 @@ class WeatherAgentDashboard:
                     <p><span class="value">{report['metrics'].get('errors',{}).get('total_errors',0)}</span> total</p>
                     </div>
 
-                    <h3>📈 Daily Requests</h3><img src="daily_requests.png" alt="Daily Requests"/>
                     <h3>🏙️ Top Cities</h3><img src="top_cities.png" alt="Top Cities"/>
                     <h3>⏱️ Response Time Distribution</h3><img src="response_time_distribution.png" alt="Response Time"/>
                     <h3>⭐ Ratings</h3><img src="feedback_ratings.png" alt="Ratings"/>
