@@ -1,0 +1,3 @@
+timestamp,session_id,message,rating,feedback_text,response_quality
+2025-08-26T22:42:12.287610,string,string,1,,good
+2025-08-27T15:05:19.325579,string,string,1,,good

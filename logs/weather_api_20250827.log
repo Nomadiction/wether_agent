@@ -1,0 +1,9 @@
+2025-08-27 14:53:51,541 - weather_api - INFO - [chat] session=user123 message="What's the weather in Berlin?"
+2025-08-27 14:53:51,546 - weather_api - ERROR - [chat] ERROR REDIS_URL is not set. Example: redis://localhost:6379/0
+2025-08-27 14:54:03,698 - weather_api - INFO - [chat] session=user123 message='What is the weather in Berlin?'
+2025-08-27 14:54:03,699 - weather_api - ERROR - [chat] ERROR REDIS_URL is not set. Example: redis://localhost:6379/0
+2025-08-27 15:04:28,324 - weather_api - INFO - [chat] session=user1 message='What is the weather in Berlin?'
+2025-08-27 15:04:29,419 - weather_api - INFO - [chat] done in 1093.35ms found=True city=Berlin
+2025-08-27 15:05:19,316 - weather_api - INFO - [feedback] session=string rating=1
+2025-08-27 15:08:02,799 - weather_api - INFO - [chat] session=user1 message='What is the weather in Berlin?'
+2025-08-27 15:08:04,869 - weather_api - INFO - [chat] done in 2066.23ms found=True city=Berlin

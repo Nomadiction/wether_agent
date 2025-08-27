@@ -1,0 +1,4 @@
+timestamp,session_id,error_type,error_message,request_data
+2025-08-26T22:41:58.425726,user123,chat_error,REDIS_URL is not set. Example: redis://localhost:6379/0,"{""message"": ""Weather in Berlin?"", ""response_time_ms"": 0.5548000335693359}"
+2025-08-27T14:53:51.549394,user123,chat_error,REDIS_URL is not set. Example: redis://localhost:6379/0,"{""message"": ""What's the weather in Berlin?"", ""response_time_ms"": 4.7130584716796875}"
+2025-08-27T14:54:03.699123,user123,chat_error,REDIS_URL is not set. Example: redis://localhost:6379/0,"{""message"": ""What is the weather in Berlin?"", ""response_time_ms"": 0.5064010620117188}"

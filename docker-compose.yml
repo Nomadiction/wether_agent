@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    container_name: weather_api
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - LOG_LEVEL=INFO
+      - SERVICE_NAME=weather_api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    volumes:
+      - ./logs:/app/logs
+      - ./metrics:/app/metrics
+      - ./dashboard:/app/dashboard
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
