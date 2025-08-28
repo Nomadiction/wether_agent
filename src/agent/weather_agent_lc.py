@@ -17,7 +17,6 @@ class WeatherAgentLC(BaseAgent):
             chat_history = RedisChatMessageHistory(session_id=session_id, url=self.redis_url)
         else:
             chat_history = ChatMessageHistory()
-        # Храним историю напрямую, без устаревшего ConversationBufferMemory
         self.chat_history = chat_history
 
     def _extract_city(self, text: str) -> str:
@@ -32,7 +31,7 @@ class WeatherAgentLC(BaseAgent):
                 if wl in ("в", "in") and i + 1 < len(parts):
                     city = parts[i + 1].strip()
                     break
-            # Если явного указания 'в'/'in' нет - не пытаемся угадывать по последнему слову
+            # Не пытаемся угадывать по последнему слову
             return city
         if len(text.split()) == 1:
             return text.strip()

@@ -89,7 +89,7 @@ class MetricsCollector:
                     ratings.append(int(row["rating"]))
             if ratings:
                 summary["feedback_stats"] = {"avg_rating": sum(ratings)/len(ratings), "total_feedback": len(ratings)}
-        # Errors (последние 10)
+        # Errors 
         if self.errors_file.exists():
             with open(self.errors_file, "r", encoding="utf-8") as f:
                 rdr = list(csv.DictReader(f))
